@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> 
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!--Barra de navegación-->
+        <div class="wrapper">
+            <!--<div class="navbar">
+                <a class="container-logo" href="index.html"></a>
+                <div class="botones">
+                    <a class="btn btn-1" href="index.html">Mi Persona</a>
+                    <a class="btn btn-2" href="proyectos.html">Mis Proyectos</a>-->
+                    <!--a class="btn btn-3" href="contacto.html">Contacto</!--a>-->
+                </div>
+            </div>
+        </div>
+        
+        <!--Primera parte, presentation, contenido1-->
+        <section class="contenido1">
+            <div class="container-group">
+                <div class="left-column">
+                    <img class="foto" src="fotoproject/minichibi.jpg" alt="Saul">
+                    <div class="container-flex"> 
+                        <h1>Bienvenidos a mi portfolio personal. Mi nombre es Saul Romero y soy programador Full-Stack.</h1>
+                    </div>
+                    <!-- Botón para descargar CV -->
+                    <div class="download-cv">
+                        <a class="btn btn-cv" href="../portafolio/fotoproject/Curriculum TI.pdf" download>Descarga CV</a>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <!--Slider-->
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide">
+                                <img src="fotoproject/tiobox.png" alt="tiobox">
+                            </div>
+                            <div class="slide">
+                                <img src="fotoproject/credits.png" alt="creditos">
+                            </div>
+                            <div class="slide">
+                                <img src="fotoproject/inf.png" alt="informacion">
+                            </div>
+                            <div class="slide">
+                                <img src="fotoproject/shop.png" alt="tienda">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="btn-proyectos">
+            <a href="proyectos">Ver mis proyectos</a>
+        </div>
+
+        <!-- Apartado de lenguajes de programación, contenido2-->
+        <h2 class="text2">Habilidades o lenguajes de Programación que domino.</h2>
+        <div class="fotos">
+            <div class="image-wrapper">
+                <img src="fotoproject/html.png" alt="HTML" class="mini-foto">
+            </div>
+            
+            <div class="image-wrapper">
+                <img src="fotoproject/css.png" alt="CSS" class="mini-foto">
+            </div>
+            
+            <div class="image-wrapper">
+                <img src="fotoproject/javscript.png" alt="JavaScript" class="mini-foto">
+            </div>
+
+            <div class="image-wrapper">
+                <img src="fotoproject/java.png" alt="Java" class="mini-foto">
+            </div>
+            
+            <div class="image-wrapper">
+                <img src="fotoproject/python.png" alt="Python" class="mini-foto">
+            </div>
+        </div> 
+        <!---->
+        <section class="contenido2">
+            <div class="texto">
+                <h1>Un poco sobre mi:</h1>
+                <p>Actualmente, sigo estudiando y practicando programación de forma independiente, dominando poco a poco la creación y manutencion de sitios webs. Me gustan los desafios, y me pruebo a mi mismo que si puedo. Mi meta mas grande a alcanzar es el de crear un video juego bien hecho y objetivo final, una AI. Aunque sigo aprendiendo, me siento capas se realizar un buen trabajo y poder contribuir y ayudar a la compañia a la cual me fuese asigando.</p>
+            </div>
+        </section>
+
+            <!--contenido3-->
+            <section class="contenido3">
+                <h1 class="tp1">Todos los proyectos hechos por mí</h1>
+                <div class="links-section">
+                    <div class="link-item">
+                        <h2>Proyecto 1</h2>
+                        <a href="https://www.ejemplo1.com">Ver Proyecto 1</a>
+                        <img src="fotoproject/proyecto1.png" alt="Proyecto 1" class="project-photo">
+                    </div>
+                    <div class="link-item">
+                        <h2>Proyecto 2</h2>
+                        <a href="https://www.ejemplo2.com">Ver Proyecto 2</a>
+                        <img src="fotoproject/proyecto2.png" alt="Proyecto 2" class="project-photo">
+                    </div>
+                    <div class="link-item">
+                        <h2>Proyecto 3</h2>
+                        <a href="https://www.ejemplo3.com">Ver Proyecto 3</a>
+                        <img src="fotoproject/proyecto3.png" alt="Proyecto 3" class="project-photo">
+                    </div>
+                    <div class="link-item">
+                        <h2>Proyecto 4</h2>
+                        <a href="https://www.ejemplo4.com">Ver Proyecto 4</a>
+                        <img src="fotoproject/proyecto4.png" alt="Proyecto 4" class="project-photo">
+                    </div>
+                </div>
+            </section>
+        <!--Creditos-->
+        <footer class="footer">
+            <div class="footer-info">
+                <!--<p>&copy; 2024 Saulromero. Todos los derechos reservados.</p>-->
+                <div class="social-links">
+                    <a href="#">Telegram</a>
+                    <a href="#">Discord</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            let slides = document.querySelectorAll('.slide');
+            let currentIndex = 0;
+            let slideInterval = setInterval(nextSlide, 2400);
+
+            function nextSlide() {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add('active');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,301 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Barra de navegación */
+/*.navbar {
+    display: flex;
+    background-color: rgba(5, 5, 5, 0.911);
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-logo {
+    flex-grow: 1;
+}
+
+.navbar a {
+    margin: 0 15px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 12px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #777;
+    color: #fff;
+}*/
+
+/* Contenido 1 */
+.contenido1 {
+    padding: 21vh 10px;
+    position: relative;
+    background: url('fotoproject/AlbedoBase_XL_I_want_a_image_made_programming_codes_with_neon_1.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container-group {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas nuevas si es necesario */
+    justify-content: space-between; /* Distribuye el espacio entre columnas */
+    align-items: center;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px; /* Asegura que las columnas tengan un tamaño mínimo */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.foto {
+    width: 250px; /* Aumentado de 200px a 250px */
+    height: 250px; /* Aumentado de 200px a 250px */
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.container-flex {
+    margin-bottom: 20px;
+}
+
+.download-cv {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-cv {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #3498db;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-cv:hover {
+    background-color: #2980b9;
+}
+/* boton proyectos */
+.btn-proyectos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-proyectos a {
+    text-decoration: none;
+    color: rgb(240, 16, 16);
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-proyectos a:hover {
+    background-color: #fff;
+}
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 650px; /* Ajusta el ancho del slider */
+    aspect-ratio: 16 / 9; /* Proporción de aspecto fija */
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 auto; /* Centra el slider */
+    box-sizing: border-box;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: auto;
+    transition: opacity 1s ease;
+    opacity: 0;
+    position: absolute;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+/* Segundo apartado fotos lenguajes y progreso */
+.fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: rgb(8, 8, 8);
+}
+
+.mini-foto {
+    width: 100px;
+    height: 100px;
+}
+
+/* Apartado sobre mi */
+.contenido2 {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contenido2 .texto {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenido2 h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contenido2 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+/*Contenido3*/
+.contenido3 {
+    padding: 40px 20px;
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+}
+.contenido3 .tp1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+.links-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.link-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.link-item h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.link-item a {
+    display: block;
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.link-item a:hover {
+    color: #2980b9;
+}
+
+.project-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* Inferior de página */
+.footer {
+    background-color: rgba(5, 5, 5, 0.911);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    .container-group {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        padding: 10px;
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+}
